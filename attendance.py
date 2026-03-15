@@ -9,7 +9,7 @@ import numpy as np
 import requests  # Import requests library for API calls 
  
 # Connect to SQLite database 
-conn = sqlite3.connect('face_database.db') 
+conn = sqlite3.connect('database_name.db') 
 cursor = conn.cursor() 
  
 # Create a table to store attendance if it doesn't exist 
@@ -34,7 +34,7 @@ attendance_recorded = {}  # Dictionary to track in-time and out-time for each
 recognized face 
  
 # API endpoint for sheet.best to update Google Sheet 
-api_url = 'https://sheet.best/api/sheets/a6074742-268e-4151-b57e-e5f57f35aa7d' 
+api_url = 'api_url' 
  
 while True: 
     # Capture frame-by-frame 
