@@ -11,7 +11,7 @@ os.makedirs(output_folder, exist_ok=True)
 video_capture = cv2.VideoCapture(0) 
  
 # Connect to SQLite database 
-conn = sqlite3.connect('face_database.db') 
+conn = sqlite3.connect('database_name.db') 
 cursor = conn.cursor() 
  
 # Create a table to store face data if it doesn't exist 
